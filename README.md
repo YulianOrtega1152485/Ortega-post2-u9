@@ -17,3 +17,9 @@ Implementación de rutinas de servicio de interrupción (ISR) en ensamblador x86
 - NASM
 - DOSBox
 - Arquitectura x86
+
+## 1: ISR personalizado para IRQ1
+
+Se implementó una rutina de servicio de interrupción personalizada para IRQ1 (teclado), reemplazando temporalmente el handler original de INT 09h y restaurándolo después de atender 5 pulsaciones.
+
+![Checkpoint 1](capturas/checkpoint1.png)
