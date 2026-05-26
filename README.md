@@ -31,3 +31,9 @@ Se implementó una rutina de servicio de interrupción personalizada para IRQ1 (
 Se implementó el enmascaramiento temporal de IRQ1 mediante modificación del IMR del PIC 8259A usando el puerto 21h y posterior restauración de la máscara original.
 
 ![Checkpoint 2](capturas/checkpoint2.png)
+
+## 3: Encadenamiento de ISR
+
+Se implementó una simulación de encadenamiento de ISR para teclado, registrando pulsaciones mientras el sistema continúa respondiendo normalmente a la entrada del usuario.
+
+![Checkpoint 3](capturas/checkpoint3.png)
