@@ -18,8 +18,16 @@ Implementación de rutinas de servicio de interrupción (ISR) en ensamblador x86
 - DOSBox
 - Arquitectura x86
 
+## Evidencias
+
 ## 1: ISR personalizado para IRQ1
 
 Se implementó una rutina de servicio de interrupción personalizada para IRQ1 (teclado), reemplazando temporalmente el handler original de INT 09h y restaurándolo después de atender 5 pulsaciones.
 
 ![Checkpoint 1](capturas/checkpoint1.png)
+
+## 2: Enmascaramiento de IRQ1
+
+Se implementó el enmascaramiento temporal de IRQ1 mediante modificación del IMR del PIC 8259A usando el puerto 21h y posterior restauración de la máscara original.
+
+![Checkpoint 2](capturas/checkpoint2.png)
